@@ -8,21 +8,26 @@
 <body>
  <form action="" method="post">
     <p>digite seu nome</p>
-    <input type="text" name="nome">
+    <input type="text" name="nome" required>
     <br>
     <p>insira seu email</p>
-    <input type="email" name="email">
+    <input type="email" name="email" placeholder="exemplo@gmail.com" required>
     <br>
     <p>insira sua idade</p>
-    <input type="number" name="age">
+    <input type="number" name="age"required>
     <br>
     <p>insira seu telefone</p>
-    <input type="tel" name="phone">
+    <input type="tel" name="phone" placeholder="(XX) XXXX-XXXX">
     <br>
     <p>esta trabalhando atualmente?</p>
     <input type="radio" name="work" value="sim">sim
     <input type="radio" name="work" value="nao">nao
     <br>
+    <select name="escolaridade">
+        <option value="incompleto"></option>
+        <option value="completo"></option>
+        <option value="estudando"></option>
+    </select>
     <br>
     <input type="checkbox" name="novidades" checked>aceito receber novidades
  </form>
